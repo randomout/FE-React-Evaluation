@@ -46,3 +46,20 @@ username with the username the user input on the login page. Below that display 
 When you click on an interest or a skill you will be routed to a page that also shows the detail attribute 
 of that particular skill or interest (much like in the mockup).
 
+# Backend Track
+Although the repo is titled "FE-React-Evaluation" we thought it might be useful to add some backend tasks
+to help evaluate candidates who are more backend adept (or just for over achievers).
+
+### Tasks
+1) For this part of the exercises we want the candidate to build a backend that is decoupled from the frontend application. 
+The BE API should return data in the same sort of format as seen in dummy-data.js (same type of data)
+2) It should be a RESTful API
+3) Should at the very least have read capabilities (bonus points for a full CRUD API with a connected Database)
+4) Build in authentication for the API
+5) If you are also building out the FE demonstrate the FE integrating with the BE.
+
+#### Notes
+You can build the Backend with any language or framework you feel appropriate (Node.js, PHP, Java, .Net .....).
+
+Not all the tasks listed above must be completed (such as building in an Auth layer), get as much as you can get done
+with the allotted amount of time, quality is better than quantity.
