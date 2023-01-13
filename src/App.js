@@ -12,11 +12,14 @@ function App() {
     <div className="App">
       <p>This is App.js</p>
         <Switch>
-          <Route path='/' element={<Home />} />
-          <Route path='/interests' element={<Interests />} />
-          <Route path='/skills' element={<Skills />} />
+          <Route path='/' element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path='/interests' element={<Interests />} />
+            <Route path='/skills' element={<Skills />} />
+          </Route>
+
           <Route path='/login' element={<Login />} />
-        </Switch>
+          </Switch>
     </div>
   );
 }
