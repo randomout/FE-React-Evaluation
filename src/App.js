@@ -1,25 +1,23 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Login from './Login';
+import Layout from "./Layout";
+
 import {
     Route,
-    Switch
+    Switch,
+    Link
 } from 'react-router-dom';
 import {fakeInterests, fakeSkills} from "./dummy-data";
 
 function App() {
   return (
     <div className="App">
-      <p>This is App.js</p>
-        <Switch>
-          <Route path='/' element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path='/interests' element={<Interests />} />
-            <Route path='/skills' element={<Skills />} />
-          </Route>
-
-          <Route path='/login' element={<Login />} />
-          </Switch>
+      <Switch>
+        <Route path='/' component={Layout} />
+        <Route path='/login' component={Login} />
+      </Switch>
     </div>
   );
 }
