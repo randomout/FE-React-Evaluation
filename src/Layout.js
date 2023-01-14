@@ -1,10 +1,14 @@
 import React from "react";
 import { Route, Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+
 import Home from './Home';
 import Interests from './Interests';
 import Skills from './Skills';
 
 function Layout() {
+  const user = useSelector((state) => state.user);
+
   return (
     <div className="Layout">
        <nav>
@@ -19,7 +23,7 @@ function Layout() {
               <Link to="/skills">Skills</Link>
             </li>
             <li>
-              Username goes here...
+              {user.userName}
             </li>
           </ul>
         </nav>
