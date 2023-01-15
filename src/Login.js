@@ -5,6 +5,8 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { login } from "./actions";
 
+import './Login.css';
+
 function Login() {
   const [data, setData] = useState({
     username: '',
@@ -29,15 +31,15 @@ function Login() {
 
   return (
     <div className="Login">
-      <form onSubmit={submitHandler}>
-        <label htmlFor="username" >Username</label>
-        <input type="text" name="username" value={data.username} onChange={changeHandler}/>
-
-        <label htmlFor="password">Password</label>
-        <input type="password" name="password" value={data.password} onChange={changeHandler}/>
-
+      <div className="Login-logo">
+        <img src="logo.png" />
+      </div>
+      <form className="Login-form" onSubmit={submitHandler}>
+        <input type="text" name="username" value={data.username} onChange={changeHandler} placeholder="Username" required/>
+        <input type="password" name="password" value={data.password} onChange={changeHandler} placeholder="Password" required/>
         <button type="submit">Login</button>
       </form>
+      
     </div>
   )
 }
