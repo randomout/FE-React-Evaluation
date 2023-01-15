@@ -4,12 +4,10 @@ import './App.css';
 import Login from './Login';
 import Layout from "./Layout";
 import ProtectedRoute from "./ProtectedRoute";
-
 import {
     Route,
     Switch,
 } from 'react-router-dom';
-import {fakeInterests, fakeSkills} from "./dummy-data";
 
 function App() {
   return (
