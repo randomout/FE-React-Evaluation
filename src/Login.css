@@ -37,6 +37,10 @@
   background-color: rgb(66 80 91);
 }
 
+.Login-form span {
+  color: white;
+}
+
 .Login-form input, .Login-form button {
   margin: 1em;
   padding: .7em;

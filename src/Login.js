@@ -35,6 +35,7 @@ function Login() {
         <img src="logo.png" />
       </div>
       <form className="Login-form" onSubmit={submitHandler}>
+        <span>Login to Our Magic Portal</span>
         <input type="text" name="username" value={data.username} onChange={changeHandler} placeholder="Username" required/>
         <input type="password" name="password" value={data.password} onChange={changeHandler} placeholder="Password" required/>
         <button type="submit">Login</button>
