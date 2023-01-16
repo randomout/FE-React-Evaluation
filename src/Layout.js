@@ -6,8 +6,9 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 import Home from './Home';
 import Interest from './Interest';
-import Skills from './Skills';
+import Skill from './Skill';
 import Dummy from './Dummy';
+
 
 import './Layout.css';
 
@@ -38,7 +39,7 @@ function Layout() {
 
         <Route exact path="/" component={Home} />
         <Route path="/interest/:id" component={Interest} />
-        <Route path="/skill/:id" component={Skills} />
+        <Route path="/skill/:id" component={Skill} />
         <Route path="/nav2" component={Dummy} />
         <Route path="/nav3" component={Dummy} />
     </div>

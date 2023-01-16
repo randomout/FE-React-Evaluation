@@ -1,0 +1,47 @@
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  padding: 1em;
+}
+
+.skill-name {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.skill-type {
+  padding: .2em .75em .2em .75em;
+  font-size: .9em;
+  color: white;
+}
+
+.skill-type-Essential {
+  background-color: purple;
+}
+
+.skill-type-Practical {
+  background-color: gray;
+}
+
+.skill-type-Professional {
+  background-color: red;
+}
+
+.skill-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin: 0;
+}
+
+.skill-date label {
+  font-weight: 700;
+  padding-right: .8em;
+}
+
+.skill-detail {
+  font-size: .9em;
+}
