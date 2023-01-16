@@ -21,7 +21,7 @@ function Layout() {
        <nav className="navbar">
           <img className="logo" src="logo.png" />
           <ul>
-            <li className={location.pathname === '/' ? 'selected' : ''}>
+            <li className={location.pathname !== '/nav2' && location.pathname !== '/nav3' ? 'selected' : ''}>
               <Link to="/">Home</Link>
             </li>
             <li className={location.pathname === '/nav2' ? 'selected' : ''}>
