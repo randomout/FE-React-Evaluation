@@ -1,4 +1,4 @@
-import { fakeSkills } from "../dummy-data";
+import { fakeSkills } from "../data/dummy-data";
 
 export const SKILLS_LOADED = 'SKILLS_LOADED';
 

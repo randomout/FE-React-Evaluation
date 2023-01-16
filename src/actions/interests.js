@@ -1,4 +1,4 @@
-import { fakeInterests } from "../dummy-data";
+import { fakeInterests } from "../data/dummy-data";
 
 export const INTERESTS_LOADED = 'INTERESTS_LOADED';
 
