@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { loadInterests, loadSkills } from './actions'
+import AttributesView from './AttributesView';
 
 import './Home.css';
 
@@ -27,6 +28,9 @@ function Home() {
       luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien 
       nunc accuan eget.
       </p>
+
+      <AttributesView category="Interest" attributes={interests} />
+      <AttributesView category="Skill" attributes={skills} />
     </div>
   )
 }
