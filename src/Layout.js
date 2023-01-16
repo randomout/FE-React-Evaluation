@@ -5,8 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 import Home from './Home';
-import Interests from './Interests';
+import Interest from './Interest';
 import Skills from './Skills';
+import Dummy from './Dummy';
 
 import './Layout.css';
 
@@ -22,11 +23,11 @@ function Layout() {
             <li className={location.pathname === '/' ? 'selected' : ''}>
               <Link to="/">Home</Link>
             </li>
-            <li className={location.pathname === '/interests' ? 'selected' : ''}>
-              <Link to="/interests">Interests</Link>
+            <li className={location.pathname === '/nav2' ? 'selected' : ''}>
+              <Link to="/nav2">Navigation 2</Link>
             </li>
-            <li className={location.pathname === '/skills' ? 'selected' : ''}>
-              <Link to="/skills">Skills</Link>
+            <li className={location.pathname === '/nav3' ? 'selected' : ''}>
+              <Link to="/nav3">Navigation 3</Link>
             </li>
             <li>
               <FontAwesomeIcon icon={faUser} />
@@ -36,8 +37,10 @@ function Layout() {
         </nav>
 
         <Route exact path="/" component={Home} />
-        <Route path="/interests" component={Interests} />
-        <Route path="/skills" component={Skills} />
+        <Route path="/interest/:id" component={Interest} />
+        <Route path="/skill/:id" component={Skills} />
+        <Route path="/nav2" component={Dummy} />
+        <Route path="/nav3" component={Dummy} />
     </div>
   )
 }
