@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Login from './Login';
 import Layout from "./Layout";
@@ -11,7 +10,7 @@ import {
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Switch>
         <Route path='/login' component={Login} />
         <ProtectedRoute path='/' component={Layout} />

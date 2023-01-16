@@ -1,9 +1,9 @@
-.Home {
+.home {
   text-align: left;
   padding: 1em;
 }
 
-.Home p.welcome {
+.home p.welcome {
   font-size: 2em;
   font-weight: 500;
 }

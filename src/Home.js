@@ -18,7 +18,7 @@ function Home() {
   }, [dispatch]);
   
   return (
-    <div className="Home">
+    <div className="home">
       <p className="welcome">Welcome {user.userName}</p>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
