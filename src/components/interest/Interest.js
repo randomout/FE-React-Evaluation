@@ -4,7 +4,7 @@ import { useParams } from "react-router";
 
 import './Interest.css';
 
-function Interest() {
+export function Interest() {
   const { id } = useParams();
   const interests = useSelector((state) => state.user.interests);
 
@@ -18,5 +18,3 @@ function Interest() {
     </div>
   )
 }
-
-export default Interest;

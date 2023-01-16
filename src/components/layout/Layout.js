@@ -4,15 +4,13 @@ import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 
-import Home from './Home';
-import Interest from './Interest';
-import Skill from './Skill';
+import { Home, Interest, Skill } from "../";
 import Placeholder from './Placeholder';
 
 
 import './Layout.css';
 
-function Layout() {
+export function Layout() {
   const user = useSelector((state) => state.user);
   const location = useLocation();
 
@@ -45,5 +43,3 @@ function Layout() {
     </div>
   )
 }
-
-export default Layout;

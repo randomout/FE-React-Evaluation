@@ -5,7 +5,7 @@ import moment from "moment";
 
 import './Skill.css';
 
-function Skill() {
+export function Skill() {
   const { id } = useParams();
   const skills = useSelector((state) => state.user.skills);
 
@@ -27,5 +27,3 @@ function Skill() {
     </div>
   )
 }
-
-export default Skill;

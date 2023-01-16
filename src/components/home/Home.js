@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { loadInterests, loadSkills } from './actions'
-import AttributesView from './AttributesView';
+import { loadInterests, loadSkills } from '../../actions'
+import { AttributesView } from "../attribute";
 
 import './Home.css';
 
-function Home() {
+export function Home() {
   const user = useSelector((state) => state.user);
   const interests = useSelector((state) => state.user.interests);
   const skills = useSelector((state) => state.user.skills);
@@ -34,5 +34,3 @@ function Home() {
     </div>
   )
 }
-
-export default Home;

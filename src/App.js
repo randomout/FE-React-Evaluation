@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
-import Login from './Login';
-import Layout from "./Layout";
-import ProtectedRoute from "./ProtectedRoute";
+import { Login, Layout, ProtectedRoute } from './components';
+
 import {
     Route,
     Switch,

@@ -1,9 +1,9 @@
 import React from "react";
-import Attribute from "./Attribute";
+import { Attribute } from "./Attribute";
 
 import './AttributesView.css';
 
-function AttributesView({category, attributes}) {
+export function AttributesView({category, attributes}) {
   let attributeList = null;
 
   if(attributes) {
@@ -23,5 +23,3 @@ function AttributesView({category, attributes}) {
     </div>
   )
 }
-
-export default AttributesView;

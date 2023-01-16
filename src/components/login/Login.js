@@ -3,11 +3,11 @@ import { useHistory } from "react-router-dom";
 
 import { useSelector, useDispatch } from "react-redux";
 
-import { login } from "./actions";
+import { login } from "../../actions";
 
 import './Login.css';
 
-function Login() {
+export function Login() {
   const [data, setData] = useState({
     username: '',
     password: '',
@@ -44,5 +44,3 @@ function Login() {
     </div>
   )
 }
-
-export default Login;

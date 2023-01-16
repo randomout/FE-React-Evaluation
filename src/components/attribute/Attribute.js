@@ -3,7 +3,7 @@ import { useHistory } from "react-router";
 
 import './Attribute.css';
 
-function Attribute({category, id, name, type}) {
+export function Attribute({category, id, name, type}) {
   const history = useHistory();
 
   const selectAttribute = (e) => {
@@ -29,5 +29,3 @@ function Attribute({category, id, name, type}) {
     </div>
   );
 }
-
-export default Attribute
