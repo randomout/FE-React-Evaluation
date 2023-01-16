@@ -25,9 +25,11 @@
 .navbar li {
   margin: auto;
   width: 100%;
-  border-left: 1px solid white;
 }
 
+.navbar li:not(:first-child) {
+  border-left: 1px solid white;
+}
 
 .navbar .logo {
   width: 12%;
@@ -39,8 +41,17 @@
 .navbar a {
   color: white;
   text-decoration: none;
+  padding-bottom: .25em;
 }
 
-.navbar .user {
+li.selected a {
+  border-bottom: 2px solid rgb(237 134 67);
+}
+
+.navbar .username {
+  padding-left: .5em;
   font-weight: 700;
 }
+
+
+
