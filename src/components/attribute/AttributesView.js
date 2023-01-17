@@ -3,6 +3,9 @@ import { Attribute } from "./Attribute";
 
 import './AttributesView.css';
 
+/**
+ * Display component for a list of Attribute cards
+ */
 export function AttributesView({category, attributes}) {
   let attributeList = null;
 

@@ -1,0 +1,9 @@
+.skills {
+  text-align: left;
+  padding: 1em;
+}
+
+.skills p.title {
+  font-size: 2em;
+  font-weight: 500;
+}

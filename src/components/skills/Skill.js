@@ -2,11 +2,12 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router";
 import moment from "moment";
+import { DATE_FORMAT } from "../constants";
 
 import './Skill.css';
 
 /**
- * Skill page component that shows details for a single skill for the logged-in user
+ * Skill page that shows details for a single skill for the logged-in user
  */
 export function Skill() {
   const { id } = useParams();
@@ -23,7 +24,7 @@ export function Skill() {
           Learned:
         </label>
         <div>
-          {moment(skill.DateLearned).format('MM/DD/YYYY')}
+          {moment(skill.DateLearned).format(DATE_FORMAT)}
         </div>
       </div>
       <p className="skill-detail">{skill.detail}</p>

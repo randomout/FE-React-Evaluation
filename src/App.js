@@ -8,8 +8,10 @@ import {
   Layout, 
   ProtectedRoute, 
   Home, 
-  Interest, 
+  Interest,
+  Interests, 
   Skill, 
+  Skills,
   Placeholder 
 } from './components';
 
@@ -25,8 +27,8 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route path="/interest/:id" component={Interest} />
             <Route path="/skill/:id" component={Skill} />
-            <Route path="/interests" component={Placeholder} />
-            <Route path="/skills" component={Placeholder} />
+            <Route path="/interests" component={Interests} />
+            <Route path="/skills" component={Skills} />
           </Layout>
         </ProtectedRoute>
       </Switch>

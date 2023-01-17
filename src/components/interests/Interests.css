@@ -1,0 +1,9 @@
+.interests {
+  text-align: left;
+  padding: 1em;
+}
+
+.interests p.title {
+  font-size: 2em;
+  font-weight: 500;
+}
