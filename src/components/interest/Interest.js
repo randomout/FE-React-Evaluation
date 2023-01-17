@@ -4,6 +4,9 @@ import { useParams } from "react-router";
 
 import './Interest.css';
 
+/**
+ * Interest page component that shows details for a single interest for the logged-in user
+ */
 export function Interest() {
   const { id } = useParams();
   const interests = useSelector((state) => state.user.interests);

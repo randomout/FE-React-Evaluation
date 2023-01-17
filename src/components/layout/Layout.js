@@ -10,6 +10,9 @@ import Placeholder from './Placeholder';
 
 import './Layout.css';
 
+/**
+ * Default layout for all pages (except login)
+ */
 export function Layout() {
   const user = useSelector((state) => state.user);
   const location = useLocation();

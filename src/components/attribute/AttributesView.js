@@ -7,9 +7,10 @@ export function AttributesView({category, attributes}) {
   let attributeList = null;
 
   if(attributes) {
-    attributeList = attributes.map((attribute) => (
+    attributeList = attributes.map((attribute, idx) => (
       <Attribute 
         category={category}
+        idx={idx + 1}
         id={attribute.id}
         name={attribute.name}
         type={attribute.type}

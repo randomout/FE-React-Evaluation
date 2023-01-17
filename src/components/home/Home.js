@@ -5,6 +5,9 @@ import { AttributesView } from "../attribute";
 
 import './Home.css';
 
+/**
+ * Home page. Shows list of interests/skills for logged in user. 
+ */
 export function Home() {
   const user = useSelector((state) => state.user);
   const interests = useSelector((state) => state.user.interests);

@@ -2,6 +2,7 @@ import { fakeSkills } from "../data/dummy-data";
 
 export const SKILLS_LOADED = 'SKILLS_LOADED';
 
+// load all skills for provided username
 export const loadSkills = (userName) => async dispatch => {
   try {
     const response = await fetch(`http://localhost:3000/api/skills&userName=${userName}`);
@@ -17,6 +18,7 @@ export const loadSkills = (userName) => async dispatch => {
   }
 }
 
+// signal app when skills are loaded
 export const skillsLoaded = (skills) => ({
   type: SKILLS_LOADED,
   payload: skills,

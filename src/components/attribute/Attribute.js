@@ -3,7 +3,7 @@ import { useHistory } from "react-router";
 
 import './Attribute.css';
 
-export function Attribute({category, id, name, type}) {
+export function Attribute({category, idx, id, name, type}) {
   const history = useHistory();
 
   const selectAttribute = (e) => {
@@ -15,7 +15,7 @@ export function Attribute({category, id, name, type}) {
     <div className="attribute" onClick={selectAttribute}>
       <div className="attribute-contents">
         <p className="attribute-id">
-          {category} {id}
+          {category} {idx}
         </p>
         <div className="attribute-row">
           <div className="attribute-label">NAME:</div>

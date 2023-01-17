@@ -7,6 +7,9 @@ import { login } from "../../actions";
 
 import './Login.css';
 
+/**
+ * Login page form component
+ */
 export function Login() {
   const [data, setData] = useState({
     username: '',

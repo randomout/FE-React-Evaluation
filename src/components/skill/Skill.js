@@ -5,6 +5,9 @@ import moment from "moment";
 
 import './Skill.css';
 
+/**
+ * Skill page component that shows details for a single skill for the logged-in user
+ */
 export function Skill() {
   const { id } = useParams();
   const skills = useSelector((state) => state.user.skills);
