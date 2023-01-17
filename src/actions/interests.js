@@ -1,11 +1,11 @@
 import { fakeInterests } from "../data/dummy-data";
 
-import { INTERESTS_LOADED } from "../constants";
+import { SERVER, INTERESTS_LOADED } from "../constants";
 
 // load all interests for provided username
 export const loadInterests = (userName) => async dispatch => {
   try {
-    const response = await fetch(`http://localhost:3000/api/interests&userName=${userName}`);
+    const response = await fetch(`${SERVER}/api/interests&userName=${userName}`);
 
     console.log(response);
 

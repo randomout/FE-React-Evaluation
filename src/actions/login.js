@@ -1,9 +1,9 @@
-import { LOGIN_SUCCESS, LOGIN_FAILURE } from "../constants";
+import { SERVER, LOGIN_SUCCESS, LOGIN_FAILURE } from "../constants";
 
 // send login data to backend and redirect to main page when successful
 export const login = (data, history) => async dispatch => {
   try {
-    const response = await fetch('http://localhost:3000/api/login', { method: 'POST', body: JSON.stringify(data)});
+    const response = await fetch(`${SERVER}/api/login`, { method: 'POST', body: JSON.stringify(data)});
 
     console.log(response);
 

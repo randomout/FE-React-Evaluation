@@ -12,6 +12,7 @@ export function AttributesView({category, attributes}) {
   if(attributes) {
     attributeList = attributes.map((attribute, idx) => (
       <Attribute 
+        key={attribute.id}
         category={category}
         idx={idx + 1}
         id={attribute.id}

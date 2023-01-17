@@ -1,11 +1,11 @@
 import { fakeSkills } from "../data/dummy-data";
 
-import { SKILLS_LOADED } from "../constants";
+import { SERVER, SKILLS_LOADED } from "../constants";
 
 // load all skills for provided username
 export const loadSkills = (userName) => async dispatch => {
   try {
-    const response = await fetch(`http://localhost:3000/api/skills&userName=${userName}`);
+    const response = await fetch(`${SERVER}/api/skills&userName=${userName}`);
 
     console.log(response);
 

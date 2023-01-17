@@ -1,6 +1,7 @@
 /**
  * Application constants
  */
+export const SERVER = 'http://localhost:3000';
 export const DATE_FORMAT = 'MM/DD/YYYY';
 
 // action name constants
