@@ -14,6 +14,11 @@ export function Layout({children}) {
   const user = useSelector((state) => state.user);
   const location = useLocation();
 
+  /**
+   * Note: 'selected' status is used for indicating which section is currently selected in the nav bar, 
+   * but doesn't work well when navigating to specific skill/interest - didn't want to 
+   * go too far down that rabbit hole...
+   */
   return (
     <div className="Layout">
        <nav className="navbar">
