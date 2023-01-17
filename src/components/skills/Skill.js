@@ -7,7 +7,9 @@ import { DATE_FORMAT } from "../../constants";
 import './Skill.css';
 
 /**
- * Skill page that shows details for a single skill for the logged-in user
+ * Skill page that shows details for a single skill for the logged-in user.
+ * Unique id of skill should be an HTML query param for the page to use for 
+ * selecting the correct skill in the stored state.
  */
 export function Skill() {
   const { id } = useParams();

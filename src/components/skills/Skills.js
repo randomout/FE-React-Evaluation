@@ -5,7 +5,7 @@ import { AttributesView } from "../attribute";
 import './Skills.css';
 
 /**
- * Skills page. Shows list of skills for logged in user. 
+ * Skills page. Shows list of all skills for logged in user. 
  */
 export function Skills() {
   const user = useSelector((state) => state.user);

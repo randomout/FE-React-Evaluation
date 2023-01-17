@@ -4,7 +4,8 @@ import { Attribute } from "./Attribute";
 import './AttributesView.css';
 
 /**
- * Display component for a list of Attribute cards
+ * Display component for a list of Attribute cards.  Cards are arrayed horizontally,
+ * wrapping in the containing area as needed.
  */
 export function AttributesView({category, attributes}) {
   let attributeList = null;

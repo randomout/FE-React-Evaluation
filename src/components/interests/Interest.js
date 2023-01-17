@@ -5,7 +5,9 @@ import { useParams } from "react-router";
 import './Interest.css';
 
 /**
- * Interest page that shows details for a single interest for the logged-in user
+ * Interest page that shows details for a single interest for the logged-in user\
+ * Unique id of interest should be an HTML query param for the page to use for 
+ * selecting the correct interest in the stored state.
  */
 export function Interest() {
   const { id } = useParams();

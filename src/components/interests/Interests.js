@@ -5,7 +5,7 @@ import { AttributesView } from "../attribute";
 import './Interests.css';
 
 /**
- * Interests page. Shows list of interests for logged in user. 
+ * Interests page. Shows list of all interests for logged in user. 
  */
 export function Interests() {
   const user = useSelector((state) => state.user);
