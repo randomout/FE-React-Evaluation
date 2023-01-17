@@ -1,11 +1,8 @@
 import React from "react";
-import { Route, Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-
-import { Home, Interest, Skill } from "../";
-import Placeholder from './Placeholder';
 
 
 import './Layout.css';
@@ -13,23 +10,23 @@ import './Layout.css';
 /**
  * Default layout for all pages (except login)
  */
-export function Layout() {
+export function Layout({children}) {
   const user = useSelector((state) => state.user);
   const location = useLocation();
 
   return (
     <div className="Layout">
        <nav className="navbar">
-          <img className="logo" src="logo.png" />
+          <img className="logo" src="logo.png" alt="logo"/>
           <ul>
-            <li className={location.pathname !== '/nav2' && location.pathname !== '/nav3' ? 'selected' : ''}>
+            <li className={location.pathname === '/' ? 'selected' : ''}>
               <Link to="/">Home</Link>
             </li>
-            <li className={location.pathname === '/nav2' ? 'selected' : ''}>
-              <Link to="/nav2">Navigation 2</Link>
+            <li className={location.pathname === '/interests' ? 'selected' : ''}>
+              <Link to="/interests">Interests</Link>
             </li>
-            <li className={location.pathname === '/nav3' ? 'selected' : ''}>
-              <Link to="/nav3">Navigation 3</Link>
+            <li className={location.pathname === '/skills' ? 'selected' : ''}>
+              <Link to="/skills">Skills</Link>
             </li>
             <li>
               <FontAwesomeIcon icon={faUser} />
@@ -38,11 +35,7 @@ export function Layout() {
           </ul>
         </nav>
 
-        <Route exact path="/" component={Home} />
-        <Route path="/interest/:id" component={Interest} />
-        <Route path="/skill/:id" component={Skill} />
-        <Route path="/nav2" component={Placeholder} />
-        <Route path="/nav3" component={Placeholder} />
+        {children}
     </div>
   )
 }

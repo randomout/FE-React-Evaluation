@@ -1,4 +1,4 @@
-export { Layout } from './layout';
+export { Layout, Placeholder } from './layout';
 export { Home } from './home';
 export { Interest } from './interest';
 export { Login } from './login';

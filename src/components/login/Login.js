@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-
-import { useSelector, useDispatch } from "react-redux";
-
+import { useDispatch } from "react-redux";
 import { login } from "../../actions";
 
 import './Login.css';
@@ -35,7 +33,7 @@ export function Login() {
   return (
     <div className="Login">
       <div className="Login-logo">
-        <img src="logo.png" />
+        <img src="logo.png" alt="logo"/>
       </div>
       <form className="Login-form" onSubmit={submitHandler}>
         <span>Login to Our Magic Portal</span>
