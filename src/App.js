@@ -12,7 +12,6 @@ import {
   Interests, 
   Skill, 
   Skills,
-  Placeholder 
 } from './components';
 
 import './App.css';
@@ -25,10 +24,10 @@ function App() {
         <ProtectedRoute path='/' >
           <Layout>
             <Route exact path="/" component={Home} />
-            <Route path="/interest/:id" component={Interest} />
-            <Route path="/skill/:id" component={Skill} />
             <Route path="/interests" component={Interests} />
             <Route path="/skills" component={Skills} />
+            <Route path="/interest/:id" component={Interest} />
+            <Route path="/skill/:id" component={Skill} />
           </Layout>
         </ProtectedRoute>
       </Switch>

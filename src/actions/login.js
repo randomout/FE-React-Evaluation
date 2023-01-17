@@ -1,5 +1,4 @@
-export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
-export const LOGIN_FAILURE = 'LOGIN_FAILURE';
+import { LOGIN_SUCCESS, LOGIN_FAILURE } from "../constants";
 
 // send login data to backend and redirect to main page when successful
 export const login = (data, history) => async dispatch => {

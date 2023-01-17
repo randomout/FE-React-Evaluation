@@ -1,4 +1,4 @@
-import { LOGIN_SUCCESS, LOGIN_FAILURE, INTERESTS_LOADED, SKILLS_LOADED } from "../actions";
+import { LOGIN_SUCCESS, LOGIN_FAILURE, INTERESTS_LOADED, SKILLS_LOADED } from "../constants";
 
 export default function user(state = initialUserState, action) {
     switch (action.type) {

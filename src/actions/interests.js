@@ -1,6 +1,6 @@
 import { fakeInterests } from "../data/dummy-data";
 
-export const INTERESTS_LOADED = 'INTERESTS_LOADED';
+import { INTERESTS_LOADED } from "../constants";
 
 // load all interests for provided username
 export const loadInterests = (userName) => async dispatch => {

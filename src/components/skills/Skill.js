@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router";
 import moment from "moment";
-import { DATE_FORMAT } from "../constants";
+import { DATE_FORMAT } from "../../constants";
 
 import './Skill.css';
 

@@ -1,6 +1,6 @@
 import { fakeSkills } from "../data/dummy-data";
 
-export const SKILLS_LOADED = 'SKILLS_LOADED';
+import { SKILLS_LOADED } from "../constants";
 
 // load all skills for provided username
 export const loadSkills = (userName) => async dispatch => {
